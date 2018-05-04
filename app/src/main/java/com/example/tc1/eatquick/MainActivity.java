@@ -1,5 +1,6 @@
 package com.example.tc1.eatquick;
 
+import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.os.Bundle;
@@ -14,6 +15,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ShareActionProvider;
+import android.widget.Spinner;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Locale;
 
 
 public class MainActivity extends AppCompatActivity
@@ -30,8 +38,10 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_TEXT, "drive.google.com");
+                intent.setType("text");
+                startActivity(Intent.createChooser(intent, "Share via"));
             }
         });
 
@@ -45,6 +55,22 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         displaySelectedScreen(R.id.nav_home);
+
+
+//        Locale[] locale = Locale.getAvailableLocales();
+//        ArrayList<String> countries = new ArrayList<>();
+//        String country;
+//        for (Locale loc : locale) {
+//            country = loc.getDisplayCountry();
+//            if (country.length() > 0 && !countries.contains(country)) {
+//                countries.add(country);
+//            }
+//        }
+//        Collections.sort(countries, String.CASE_INSENSITIVE_ORDER);
+//
+//        Spinner citizenship = (Spinner) findViewById(R.id.sp_state);
+//        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, countries);
+//        citizenship.setAdapter(adapter);
     }
 
     @Override
@@ -91,8 +117,6 @@ public class MainActivity extends AppCompatActivity
             fragment = new LoginFragment();
         } else if (id == R.id.nav_help) {
             fragment = new HelpFragment();
-        } else if (id == R.id.nav_share) {
-            fragment = new ShareFragment();
         } else if (id == R.id.nav_facebook) {
             bundle.putString("url", "https://www.facebook.com/segun.francis1");
             fragment = new WebViewFragment();

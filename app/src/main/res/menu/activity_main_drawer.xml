@@ -18,10 +18,6 @@
             android:id="@+id/nav_help"
             android:icon="@drawable/help"
             android:title="Help" />
-        <item
-            android:id="@+id/nav_share"
-            android:icon="@drawable/share"
-            android:title="Share"/>
 
     </group>
 

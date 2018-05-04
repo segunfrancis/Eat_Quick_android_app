@@ -8,4 +8,79 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome!</string>
+    <string name="home">Home</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="help">Help</string>
+    <string name="share">Share</string>
+    <string name="social">Social</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google+</string>
+    <string name="twitter">Twitter</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="phone">Telephone</string>
+    <string name="signup">Sign Up</string>
+    <string name="hungry">Hungry?</string>
+    <string name="order">Order Delicious Meals Online</string>
+    <string name="meal">Select Meal</string>
+    <string name="state">State</string>
+    <string name="town">Town</string>
+    <string name="search">Search</string>
+    <string name="nav_text">Meals Delivered to You Without Hassle</string>
+
+    <string-array name="meals">
+        <item>Select Meal</item>
+        <item>Fried Rice</item>
+        <item>Jollof Rice</item>
+        <item>Beans</item>
+        <item>Spaghetti</item>
+        <item>Pounded Yam and Egusi Soup</item>
+        <item>Amala and Ewedu</item>
+    </string-array>
+
+    <string-array name="state">
+        <item>Select State</item>
+        <item>Abuja</item>
+        <item>Abia</item>
+        <item>Adamawa</item>
+        <item>Akwa Ibom</item>
+        <item>Anambara</item>
+        <item>Bauchi</item>
+        <item>Bayelsa</item>
+        <item>Benue</item>
+        <item>Borno</item>
+        <item>Cross River</item>
+        <item>Delta</item>
+        <item>Ebonyi</item>
+        <item>Edo</item>
+        <item>Ekiti</item>
+        <item>Enugu</item>
+        <item>Gombe</item>
+        <item>Imo</item>
+        <item>Jigawa</item>
+        <item>Kaduna</item>
+        <item>Kano</item>
+        <item>Katsina</item>
+        <item>Kebbi</item>
+        <item>Kogi</item>
+        <item>Kwara</item>
+        <item>Lagos</item>
+        <item>Nasarawa</item>
+        <item>Niger</item>
+        <item>Ogun</item>
+        <item>Ondo</item>
+        <item>Osun</item>
+        <item>Oyo</item>
+        <item>Plateau</item>
+        <item>Rivers</item>
+        <item>Sokoto</item>
+        <item>Taraba</item>
+        <item>Yobe</item>
+        <item>Zamfara</item>
+    </string-array>
+
 </resources>

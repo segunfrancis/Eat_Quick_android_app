@@ -2,11 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="90sp"
-        android:text="LOGIN" />
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textIsSelectable="false"
+        android:hint="@string/email"
+        android:paddingTop="24dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textIsSelectable="false"
+        android:hint="@string/password"
+        android:paddingTop="24dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:paddingTop="24dp"/>
 
 
 </LinearLayout>

@@ -6,8 +6,60 @@
     android:id="@+id/home">
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textSize="90sp"
-        android:text="HOME" />
+        android:layout_height="wrap_content"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:textAllCaps="true"
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:text="@string/hungry" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="italic"
+        android:paddingTop="8dp"
+        android:gravity="center"
+        android:text="@string/order"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_country"
+        android:scrollbarStyle="insideInset"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="8dp"
+        android:contentDescription="@string/state"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_state"
+        android:scrollbarStyle="insideInset"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="8dp"
+        android:contentDescription="@string/state"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_meal"
+        android:entries="@array/meals"
+        android:scrollbarStyle="insideInset"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="8dp"
+        android:contentDescription="@string/meal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:text="@string/search"/>
 
 </LinearLayout>
